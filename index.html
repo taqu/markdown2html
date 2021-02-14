@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>markdown2html</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <script src="js/marked.min.js"></script>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md">
+                    markdown&emsp;<button id="convert" type="button" class="btn btn-outline-primary">Convert</button>
+                </div>
+                <div class="col-md">
+                html&emsp;<button id="copyclipboard" type="button" class="btn btn-outline-primary" data-clipboard-target="#html">Copy to clipboard</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <textarea rows="20" id="markdown" class="form-control"></textarea>
+                </div>
+                <div class="col-md">
+                    <textarea rows="20" id="html" class="form-control" readonly></textarea>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/purify.min.js"></script>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/markdown2html.js"></script>
+    </body>
+</html>
